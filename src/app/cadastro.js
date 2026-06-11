@@ -1,9 +1,9 @@
 import { useState } from "react";
 import {
-    Button,
-    Text,
-    TextInput,
-    View
+  Button,
+  Text,
+  TextInput,
+  View
 } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -24,7 +24,7 @@ export default function Cadastro() {
     };
     if(usuario.email.trim() === "" || usuario.senha.trim() === "" || usuario.nome.trim() === ""){
         alert("Há campos que não foram preenchidos!")
-        return;
+        return;s
     }
     await AsyncStorage.setItem(
       `usuario_${email}`,
