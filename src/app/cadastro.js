@@ -24,7 +24,7 @@ export default function Cadastro() {
     };
     if(usuario.email.trim() === "" || usuario.senha.trim() === "" || usuario.nome.trim() === ""){
         alert("Há campos que não foram preenchidos!")
-        return;s
+        return;
     }
     await AsyncStorage.setItem(
       `usuario_${email}`,
