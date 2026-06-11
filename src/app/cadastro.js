@@ -36,7 +36,7 @@ export default function Cadastro() {
       "Cadastro realizado!"
     );
 
-    router.replace("/login");
+    router.replace("/");
 }
   
 
@@ -72,6 +72,11 @@ export default function Cadastro() {
         title="Cadastrar"
         onPress={cadastrar}
       />
+      <Button
+      title="Voltar"
+      onPress={()=>
+        router.push("/")
+      }/>
 
     </View>
   );
