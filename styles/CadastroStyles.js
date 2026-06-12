@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container:{
         flex: 1,
-        padding: '20px',
+        padding: 20,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: "#0f172a",
@@ -11,10 +11,10 @@ export const styles = StyleSheet.create({
 
     input:{
        backgroundColor: 'hsl(222, 47%, 30%)',
-       padding:'10px',
-       borderRadius: '10px',
-       marginBottom:'10px',
-       marginTop:'5px',
+       padding:10,
+       borderRadius: 10,
+       marginBottom:10,
+       marginTop:5,
        width:'60%',
        placeholderTextColor: '#ffffff',
         alignItems: "center",
@@ -23,10 +23,11 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 12,
         elevation: 10,
+        color:'#ffffff',
     },
     texto:{
         color:'#ffffff',
-        fontSize:'16pt',
+        fontSize:16,
         fontFamily:'monospace',
     },
 
@@ -41,17 +42,17 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 8,
     elevation: 5,
-    margin:'15px'
+    margin:15
     },
     textoBotao:{
         color:'#ffffff',
-        fontWeight:'bold',
-        fontSize:'12pt'
+        fontWeight:900,
+        fontSize:20
     },
 
     cadastro:{
         alignItems:'center',
-        margin:'20px',
+        margin:20,
         width:'100%'
     },
 
@@ -64,17 +65,17 @@ export const styles = StyleSheet.create({
 
     titulo:{
         position:'relative',
-        top:'-50px',
+        top:-50,
         color:'#ffffff',
-        fontSize: '2.5rem',
-        fontWeight:'bold',
+        fontSize: 40,
+        fontWeight:800,
         letterSpacing:0.5
     },
 
     logoContainer:{ 
         position:'relative',
-        top:'-80px',
-        width:'100vw',
+        top:-80,
+        width:'100%',
         flex:0.4,
         flexDirection:'colum',
         justifyContent:'center',
@@ -82,15 +83,15 @@ export const styles = StyleSheet.create({
     },
     digestao:{
         color:'#10b981',
-        fontSize:'55px',
-        fontWeight:'bold',
+        fontSize:55,
+        fontWeight:900,
         letterSpacing:0.5,
-        marginBottom:'-30px'
+        marginBottom:-30
     },
     financeira:{
         color:"#ffffff",
-        fontSize:'55px',
-        fontWeight:'bold',
+        fontSize:55,
+        fontWeight:900,
         letterSpacing:0.5,
     }
 });
