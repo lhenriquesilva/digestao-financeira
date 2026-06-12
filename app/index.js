@@ -20,7 +20,7 @@ export default function Login() {
     const dados = await AsyncStorage.getItem(
       `usuario_${email}`
     );
-p
+
 
     if (!dados) {
       alert("Usuário não encontrado");
