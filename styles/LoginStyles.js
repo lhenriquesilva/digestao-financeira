@@ -67,7 +67,7 @@ export const styles = StyleSheet.create({
         top:-50,
         color:'#ffffff',
         fontSize: 40,
-        fontWeight:'bold',
+        fontWeight:800,
         letterSpacing:0.5
     },
 
@@ -83,14 +83,14 @@ export const styles = StyleSheet.create({
     digestao:{
         color:'#10b981',
         fontSize:55,
-        fontWeight:'bold',
+        fontWeight:900,
         letterSpacing:0.5,
         marginBottom:-30
     },
     financeira:{
         color:"#ffffff",
         fontSize:55,
-        fontWeight:'bold',
+        fontWeight:900,
         letterSpacing:0.5,
     }
 });
