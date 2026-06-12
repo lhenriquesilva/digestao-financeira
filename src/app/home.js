@@ -17,9 +17,9 @@ export default function Home() {
     const horas = String(agora.getHours()).padStart(2, "0");
     const minutos = String(agora.getMinutes()).padStart(2, "0");
     return {
-      data: `${dia}/${mes}/${ano}`,
-      hora: `${horas}:${minutos}`,
-      completa: `${dia}/${mes}/${ano} ${horas}:${minutos}`
+      //data: `${dia}/${mes}/${ano}`,
+      //hora: `${horas}:${minutos}`,
+      //completa: `${dia}/${mes}/${ano} ${horas}:${minutos}`
     };
   };
 
