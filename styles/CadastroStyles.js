@@ -46,7 +46,7 @@ export const styles = StyleSheet.create({
     },
     textoBotao:{
         color:'#ffffff',
-        fontWeight:'bold',
+        fontWeight:900,
         fontSize:20
     },
 

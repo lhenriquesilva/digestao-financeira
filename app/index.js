@@ -46,7 +46,7 @@ export default function Login() {
     <View style={styles.container}>
 
       <View style={styles.logoContainer}>
-        <Text style={styles.digestao}>Digestao</Text><Text> </Text><Text style={styles.financeira}>Financeira</Text>
+        <Text style={styles.digestao}>Digestão</Text><Text> </Text><Text style={styles.financeira}>Financeira</Text>
       </View>
 
 
