@@ -1,10 +1,11 @@
 import { useState } from "react";
 import {
-  Button,
+  Pressable,
   Text,
   TextInput,
   View
 } from "react-native";
+import { styles } from "../styles/LoginStyles";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
@@ -41,36 +42,42 @@ export default function Login() {
   }
 
   return (
-    <View style={{ padding: 20 }}>
+    <View style={styles.container}>
 
-      <Text>Email</Text>
+      <View style={styles.logoContainer}>
+        <Text style={styles.digestao}>Digestao</Text><Text> </Text><Text style={styles.financeira}>Financeira</Text>
+      </View>
 
-      <TextInput
+
+      <Text style={styles.titulo}>Login</Text>
+      <Text style={styles.texto}>Email</Text>
+
+      <TextInput style={styles.input}
         value={email}
         onChangeText={setEmail}
-        style={{ borderWidth: 1 }}
+        placeholder="Digite seu Email"
       />
 
-      <Text>Senha</Text>
+      <Text style={styles.texto}>Senha</Text>
 
-      <TextInput
+      <TextInput style={styles.input}
         secureTextEntry
         value={senha}
         onChangeText={setSenha}
-        style={{ borderWidth: 1 }}
+        placeholder="Digite sua Senha"
       />
 
-      <Button
-        title="Entrar"
+      <Pressable style={styles.botao}
         onPress={entrar}
-      />
+      ><Text style={styles.textoBotao}>Entrar</Text></Pressable>
 
-      <Button
-        title="Cadastrar"
+    <View style={styles.cadastro}>
+     <Text style={styles.textoCadastro}>Não possui conta?</Text><Pressable
         onPress={() =>
           router.push("/cadastro")
         }
-      />
+      ><Text style={styles.textoLink}>Cadastrar-se</Text></Pressable>
+      </View>
 
     </View>
   );
