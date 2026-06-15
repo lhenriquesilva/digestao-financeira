@@ -141,6 +141,25 @@ export default function ProjecaoFinanceira() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
+      <Pressable
+      style={{
+        position:'fixed',
+        backgroundColor:'#ef4444',
+        top:25,
+        right:10,
+        marginBottom:20,
+        width:80,
+        padding:10,
+        borderRadius:20,
+        textAlign:'center'
+      }}
+      onPress={()=> router.push("/")}
+      ><Text
+      style={{
+        color:"#ffffff",
+        fontWeight: 800
+      }}
+      >Log-Out</Text></Pressable>
       <Text style={styles.titulo}><Text style={{color:"#10b981"}}>Projeção</Text> Financeira</Text>
 
       <Text style={styles.label}>Saldo atual</Text>

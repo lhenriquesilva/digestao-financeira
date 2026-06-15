@@ -140,6 +140,28 @@ export default function Home() {
 
   return (
     <ScrollView style={styles.container}>
+      <Pressable
+      style={{
+        position:'fixed',
+        backgroundColor:'#ef4444',
+        top:25,
+        right:10,
+        marginBottom:50,
+        width:80,
+        padding:10,
+        borderRadius:20,
+        textAlign:'center'
+      }}
+      onPress={()=> router.push("/")}
+      ><Text
+      style={{
+        color:"#ffffff",
+        fontWeight: 800
+      }}
+      >Log-Out</Text></Pressable>
+
+
+
       <View style={styles.headerContainer}>
         <Text style={styles.titulo}>💰 Meu Dinheiro</Text>
         
