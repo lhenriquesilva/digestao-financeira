@@ -123,6 +123,20 @@ export const styles = StyleSheet.create({
     elevation: 3,
   },
 
+  botaoprojecao: {
+    backgroundColor: "#2563eb",
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    borderRadius: 16,
+    alignItems: "center",
+    shadowColor: "#2563eb",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+
+
   textoBotao: {
     color: "#ffffff",
     fontSize: 16,

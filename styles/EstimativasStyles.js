@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   },
 
   titulo: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: "700",
     color:"#ffffff",
     fontWeight: 900,

@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { useState } from "react";
 import { Pressable, ScrollView, Text, TextInput, View } from "react-native";
 import { styles } from "../styles/HomeStyles";
@@ -159,14 +160,14 @@ export default function Home() {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          placeholder="O quê? (ex: cinema, padaria...)"
+          placeholder="Receita/Despesa"
           placeholderTextColor="#999"
           value={descricao}
           onChangeText={setDescricao}
         />
         <TextInput
           style={styles.input}
-          placeholder="Quanto? (R$)"
+          placeholder="Valor"
           placeholderTextColor="#999"
           value={valor}
           onChangeText={setValor}
@@ -199,6 +200,14 @@ export default function Home() {
         >
           <Text style={styles.textoBotao}>🔄 LIMPAR</Text>
         </Pressable>
+
+          <Pressable
+          onPress={()=> router.push("./saldoprojetado")}
+          style={styles.botaoprojecao}
+        >
+          <Text style={styles.textoBotao}>SALDO PROJETADO</Text>
+        </Pressable>
+
       </View>
 
       <View style={styles.transacoesContainer}>
