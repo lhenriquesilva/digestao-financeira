@@ -17,27 +17,40 @@ export default function Cadastro() {
   const [senha, setSenha] = useState("");
 
   async function cadastrar() {
+  const emailFormatado = email.trim().toLowerCase();
 
-    const usuario = {
-      nome,
-      email,
-      senha
-    };
-    if(usuario.email.trim() === "" || usuario.senha.trim() === "" || usuario.nome.trim() === ""){
-        alert("Há campos que não foram preenchidos!")
-        return;
-    }
-    await AsyncStorage.setItem(
-      `usuario_${email}`,
-      JSON.stringify(usuario)
-    );
+  if (
+    nome.trim() === "" ||
+    emailFormatado === "" ||
+    senha.trim() === ""
+  ) {
+    alert("Há campos que não foram preenchidos!");
+    return;
+  }
 
-    alert(
-      "Sucesso",
-      "Cadastro realizado!"
-    );
+  const usuarioExistente = await AsyncStorage.getItem(
+    `usuario_${emailFormatado}`
+  );
 
-    router.replace("/");
+  if (usuarioExistente) {
+    alert("Este e-mail já está cadastrado!");
+    return;
+  }
+
+  const usuario = {
+    nome: nome.trim(),
+    email: emailFormatado,
+    senha
+  };
+
+  await AsyncStorage.setItem(
+    `usuario_${emailFormatado}`,
+    JSON.stringify(usuario)
+  );
+
+  alert("Cadastro realizado com sucesso!");
+
+  router.replace("/");
 }
   
 
@@ -62,11 +75,12 @@ export default function Cadastro() {
       <Text style={styles.texto}>Email</Text>
 
       <TextInput
-        value={email}
-        onChangeText={setEmail}
-        style={ styles.input }
-        placeholder="Digite seu Email"
-      />
+  style={styles.input}
+  value={email}
+  onChangeText={(texto) => setEmail(texto.trim().toLowerCase())}
+  placeholder="Digite seu Email"
+  autoCapitalize="none"
+/>
 
       <Text style={styles.texto}>Senha</Text>
 

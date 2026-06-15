@@ -16,31 +16,31 @@ export default function Login() {
   const [senha, setSenha] = useState("");
 
   async function entrar() {
+  const emailFormatado = email.trim().toLowerCase();
 
-    const dados = await AsyncStorage.getItem(
-      `usuario_${email}`
-    );
+  const dados = await AsyncStorage.getItem(
+    `usuario_${emailFormatado}`
+  );
 
-
-    if (!dados) {
-      alert("Usuário não encontrado");
-      return;
-    }
-
-    const usuario = JSON.parse(dados);
-
-    if (usuario.senha !== senha) {
-      alert("Senha incorreta");
-      return;
-    }
-
-    await AsyncStorage.setItem(
-      "usuarioLogado",
-      JSON.stringify(usuario)
-    );
-
-    router.replace("/home");
+  if (!dados) {
+    alert("Usuário não encontrado");
+    return;
   }
+
+  const usuario = JSON.parse(dados);
+
+  if (usuario.senha !== senha) {
+    alert("Senha incorreta");
+    return;
+  }
+
+  await AsyncStorage.setItem(
+    "usuarioLogado",
+    JSON.stringify(usuario)
+  );
+
+  router.replace("/home");
+}
 
   return (
     <View style={styles.container}>
