@@ -124,12 +124,12 @@ export const styles = StyleSheet.create({
   },
 
   botaoprojecao: {
-    backgroundColor: "#2563eb",
+    backgroundColor: "#64748b",
     paddingVertical: 16,
     paddingHorizontal: 20,
     borderRadius: 16,
     alignItems: "center",
-    shadowColor: "#2563eb",
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 8,

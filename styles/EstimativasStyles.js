@@ -141,4 +141,25 @@ textoopcao:{
     fontSize: 32,
     fontWeight: 800,
   },
+
+
+ botaoavulso: {
+    backgroundColor: "#64748b",
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    borderRadius: 16,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+   textoBotao: {
+    color: "#ffffff",
+    fontSize: 16,
+    fontWeight: "800",
+    letterSpacing: 0.5,
+  },
+
 });

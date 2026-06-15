@@ -1,10 +1,11 @@
+import { router } from "expo-router";
 import { useMemo, useState } from "react";
 import {
-    Pressable,
-    ScrollView,
-    Text,
-    TextInput,
-    View
+  Pressable,
+  ScrollView,
+  Text,
+  TextInput,
+  View
 } from "react-native";
 
 import { styles } from "../styles/EstimativasStyles";
@@ -275,6 +276,13 @@ export default function ProjecaoFinanceira() {
           R$ {saldoProjetado.toFixed(2)}
         </Text>
       </View>
+
+      <Pressable 
+      style={styles.botaoavulso}
+      onPress={()=> router.push("./home")}
+      > 
+      <Text style={styles.textoBotao}>SALDO AVULSO</Text>
+      </Pressable>
     </ScrollView>
   );
 }
