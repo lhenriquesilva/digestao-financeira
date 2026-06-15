@@ -45,6 +45,7 @@ export default function Login() {
   return (
     <View style={styles.container}>
 
+
       <View style={styles.logoContainer}>
         <Text style={styles.digestao}>Digestão</Text><Text> </Text><Text style={styles.financeira}>Financeira</Text>
       </View>
@@ -78,6 +79,22 @@ export default function Login() {
           router.push("/cadastro")
         }
       ><Text style={styles.textoLink}>Cadastrar-se</Text></Pressable>
+
+<Pressable style={{
+        position:'relative',
+        top:80,
+        padding:10,
+        backgroundColor: '#2563eb',
+        borderRadius: 20
+      }}
+        onPress={()=> router.push('./missao')}
+      ><Text
+      style={{
+        color:"#ffffff",
+        fontSize: 12,
+        fontWeight: 800
+      }}
+      >Nossa Missao</Text></Pressable>
 
       <Text style={styles.rodape}>Life goes on...</Text>
       </View>

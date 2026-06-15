@@ -99,6 +99,6 @@ export const styles = StyleSheet.create({
     rodape:{
         color:'#7a7a7a',
         position: 'relative',
-        top: 80
+        top: 70
     }
 });

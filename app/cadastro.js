@@ -100,6 +100,23 @@ export default function Cadastro() {
         router.push("/")
       }><Text style={styles.textoLink}>Voltar</Text></Pressable>
 
+
+
+<Pressable style={{
+        position:'relative',
+        top:50,
+        padding:10,
+        backgroundColor: '#2563eb',
+        borderRadius: 20
+      }}
+        onPress={()=> router.push('./missao')}
+      ><Text
+      style={{
+        color:"#ffffff",
+        fontSize: 12,
+        fontWeight: 800
+      }}
+      >Nossa Missao</Text></Pressable>
   <Text style={styles.rodape}>and on, and on, and on...</Text>
 
     </View>
