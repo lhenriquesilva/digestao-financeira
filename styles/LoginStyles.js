@@ -92,5 +92,11 @@ export const styles = StyleSheet.create({
         fontSize:55,
         fontWeight:900,
         letterSpacing:0.5,
+    },
+
+    rodape:{
+        color:'#7a7a7a',
+        position: 'relative',
+        top: 100
     }
 });

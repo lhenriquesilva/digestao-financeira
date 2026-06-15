@@ -78,6 +78,8 @@ export default function Login() {
           router.push("/cadastro")
         }
       ><Text style={styles.textoLink}>Cadastrar-se</Text></Pressable>
+
+      <Text style={styles.rodape}>Life goes on...</Text>
       </View>
 
     </View>

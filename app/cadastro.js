@@ -86,6 +86,8 @@ export default function Cadastro() {
         router.push("/")
       }><Text style={styles.textoLink}>Voltar</Text></Pressable>
 
+  <Text style={styles.rodape}>Life goes on...</Text>
+
     </View>
   );
 }
