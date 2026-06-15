@@ -172,14 +172,18 @@ export default function ProjecaoFinanceira() {
       />
 
       <Text style={styles.subtitulo}>Novo lançamento</Text>
-
+<Text style={{color:"#ffffff",
+  marginBottom:-10
+}}>Descrição</Text>
       <TextInput
         style={styles.input}
         placeholder="Descrição"
         value={descricao}
         onChangeText={setDescricao}
       />
-
+    <Text style={{color:"#ffffff",
+      marginBottom:-10
+    }}>Valor</Text>
       <TextInput
         style={styles.input}
         placeholder="Valor"
@@ -187,7 +191,9 @@ export default function ProjecaoFinanceira() {
         value={valor}
         onChangeText={setValor}
       />
-
+  <Text style={{color:"#ffffff",
+    marginBottom:-10
+  }}>Início MM/AA</Text>
       <TextInput
         style={styles.input}
         placeholder="Início (MM/AA)"
