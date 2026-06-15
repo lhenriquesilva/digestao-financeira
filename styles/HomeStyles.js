@@ -124,7 +124,7 @@ export const styles = StyleSheet.create({
   },
 
   botaoprojecao: {
-    backgroundColor: "#64748b",
+    backgroundColor: "#2563eb",
     paddingVertical: 16,
     paddingHorizontal: 20,
     borderRadius: 16,
